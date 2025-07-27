@@ -30,9 +30,11 @@ nav a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 500;
+  padding: 5px;
 }
-nav a:hover {
+nav a.active {
   color: #ff4d00;
+  border-bottom: 2px solid #ff4d00;
 }
 .hero {
   padding: 80px 20px;
@@ -129,8 +131,4 @@ footer {
   .cards-container {
     grid-template-columns: 1fr;
   }
-}
-nav a.active {
-  color: #ff4d00;
-  border-bottom: 2px solid #ff4d00;
 }
