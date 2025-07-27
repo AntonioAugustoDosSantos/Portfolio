@@ -1,117 +1,90 @@
-/* Reset e tipografia */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f5f7fa;
-  color: #1c1c1c;
+  font-family: 'Lato', sans-serif;
+  background-color: #121212;
+  color: #eee;
   line-height: 1.6;
 }
-
-a {
-  color: #0d6efd;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Cabeçalho */
 header {
-  background-color: #111827;
-  color: white;
-  padding: 1rem 2rem;
+  background: #1f1f1f;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-}
-
-header h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.highlight {
-  color: #00b4d8;
-}
-
-nav {
-  display: flex;
-  gap: 1.5rem;
   flex-wrap: wrap;
 }
-
+header h1 {
+  font-size: 1.8rem;
+  color: #ff4d00;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
 nav a {
-  color: white;
+  color: #eee;
+  text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
 }
-
 nav a:hover {
-  color: #00b4d8;
+  color: #ff4d00;
 }
-
-/* Sessões principais */
-.intro {
+.hero {
   text-align: center;
-  padding: 2rem 1rem;
-  background-color: #e2e8f0;
+  padding: 80px 20px;
+  background: #181818;
 }
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
-  padding: 2rem;
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
-
-.card {
-  background: white;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* Contato */
-.contato {
-  padding: 2rem;
-  text-align: center;
-  background-color: #111827;
+.botao {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff4d00;
   color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease;
 }
-
-.contato a {
-  color: #4fc3f7;
+.botao:hover {
+  background: #e63f00;
 }
-
-.copyright {
-  margin-top: 1rem;
-  font-size: 0.875rem;
-  color: #ccc;
+section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
 }
-
-/* Responsivo */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  nav {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .card {
-    padding: 1rem;
-  }
+h2 {
+  color: #ff4d00;
+  margin-bottom: 20px;
+}
+.servico-categoria {
+  margin-bottom: 30px;
+}
+.servico-categoria h3 {
+  color: #ffa366;
+  margin-bottom: 10px;
+}
+ul {
+  margin-left: 20px;
+}
+a {
+  color: #66cfff;
+}
+footer {
+  background: #1f1f1f;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
 }
