@@ -1,6 +1,5 @@
-
-document.querySelectorAll('.btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    alert('Obrigado! Em breve entraremos em contato.');
+document.querySelectorAll('.btn').forEach(button => {
+  button.addEventListener('click', () => {
+    alert('Obrigado! Sua solicitação foi registrada. Entraremos em contato em breve.');
   });
 });
