@@ -6,46 +6,49 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f7f9fc;
-  color: #333;
-  scroll-behavior: smooth;
+  background-color: #f5f7fa;
+  color: #222;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
 }
 
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 3rem 2rem;
+  padding: 2rem;
 }
 
-.header {
-  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+.hero {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
   color: white;
   text-align: center;
   padding: 4rem 2rem;
-  animation: fadeInDown 1s ease-out;
 }
 
-.header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease-in-out;
 }
 
-.intro-text {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 1.1rem;
+.hero p {
+  font-size: 1.2rem;
+  animation: fadeInUp 1s ease-in-out;
 }
 
 .section-title {
   font-size: 2rem;
+  margin: 3rem 0 1rem;
   text-align: center;
-  margin-bottom: 1rem;
-  color: #4e54c8;
+  color: #333;
 }
 
-.servicos-grid {
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
@@ -54,43 +57,52 @@ body {
   background: #fff;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
   text-align: center;
-  transition: all 0.3s ease;
-  animation: fadeInUp 0.6s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.8s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
-}
-
-.icon {
-  font-size: 2rem;
-  color: #4e54c8;
-  margin-bottom: 1rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
+  color: #333;
+  margin-top: 0.5rem;
   font-size: 1.3rem;
-  margin-bottom: 0.8rem;
 }
 
 .card p {
   font-size: 0.95rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.icon {
+  font-size: 2.2rem;
+  color: #6e8efb;
+  margin-bottom: 1rem;
 }
 
 .contact {
-  background-color: #eef1ff;
+  background: #edf1fc;
   text-align: center;
   padding: 2rem;
-  margin-top: 3rem;
-  border-radius: 10px;
+  margin-top: 4rem;
+  border-radius: 8px;
 }
 
-.contact p {
-  margin: 8px 0;
-  font-size: 1rem;
+.contact h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeInDown {
