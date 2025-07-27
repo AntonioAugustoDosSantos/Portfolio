@@ -1,49 +1,75 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Serviços - Antonio Augusto</title>
+  <title>Antonio Augusto - Serviços Profissionais</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section id="servicos" class="container">
-    <h2 class="section-title">Serviços</h2>
-    <div class="servicos-grid">
-      <div class="card">
-        <h3>Implantação de Jornada do Cliente</h3>
-        <p>Mapeamento estratégico de toda a jornada para retenção e fidelização.</p>
-        <button class="btn">Solicitar</button>
-      </div>
-      <div class="card">
-        <h3>Onboarding e Educação</h3>
-        <p>Fluxos de boas-vindas, tutoriais e acompanhamento para seu cliente.</p>
-        <button class="btn">Solicitar</button>
-      </div>
-      <div class="card">
-        <h3>Desenvolvimento Web</h3>
-        <p>Criação de sites responsivos e seguros com design moderno.</p>
-        <button class="btn">Solicitar</button>
-      </div>
-      <div class="card">
-        <h3>Suporte Técnico</h3>
-        <p>Instalação, manutenção e configuração de sistemas e redes.</p>
-        <button class="btn">Solicitar</button>
-      </div>
-      <div class="card">
-        <h3>Treinamento em Informática</h3>
-        <p>Aulas práticas para capacitação digital de iniciantes e empresas.</p>
-        <button class="btn">Solicitar</button>
-      </div>
-      <div class="card">
-        <h3>Análise de Dados</h3>
-        <p>Dashboards e relatórios para decisões mais estratégicas.</p>
-        <button class="btn">Solicitar</button>
-      </div>
+  <header class="header">
+    <div class="container">
+      <h1>Antonio Augusto</h1>
+      <p>Especialista em Tecnologia e Atendimento ao Cliente</p>
     </div>
-  </section>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2 class="section-title">Serviços Disponíveis</h2>
+      <p class="intro-text">Soluções inteligentes para empresas e clientes em todas as etapas.</p>
+    </section>
+
+    <section class="servicos-grid">
+      <div class="card">
+        <i class="fas fa-route icon"></i>
+        <h3>Jornada do Cliente</h3>
+        <p>Mapeamento completo da experiência do cliente para retenção e fidelização.</p>
+        <button class="btn">Solicitar</button>
+      </div>
+      <div class="card">
+        <i class="fas fa-user-graduate icon"></i>
+        <h3>Onboarding e Educação</h3>
+        <p>Fluxos personalizados de boas-vindas, tutoriais e acompanhamento estratégico.</p>
+        <button class="btn">Solicitar</button>
+      </div>
+      <div class="card">
+        <i class="fas fa-laptop-code icon"></i>
+        <h3>Desenvolvimento Web</h3>
+        <p>Criação de sites modernos, responsivos e seguros para sua presença digital.</p>
+        <button class="btn">Solicitar</button>
+      </div>
+      <div class="card">
+        <i class="fas fa-tools icon"></i>
+        <h3>Suporte Técnico</h3>
+        <p>Manutenção, instalação e configuração de sistemas, redes e dispositivos.</p>
+        <button class="btn">Solicitar</button>
+      </div>
+      <div class="card">
+        <i class="fas fa-chalkboard-teacher icon"></i>
+        <h3>Treinamento em Informática</h3>
+        <p>Capacitação prática para usuários e equipes de empresas.</p>
+        <button class="btn">Solicitar</button>
+      </div>
+      <div class="card">
+        <i class="fas fa-chart-line icon"></i>
+        <h3>Análise de Dados</h3>
+        <p>Relatórios visuais e insights estratégicos para decisões assertivas.</p>
+        <button class="btn">Solicitar</button>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contato</h2>
+      <p><i class="fas fa-envelope"></i> contatoantonioaugusto@outlook.com</p>
+      <p><i class="fas fa-phone"></i> (31) 99982-5681</p>
+    </section>
+  </main>
+
+  <?php include 'seguranca.php'; ?>
 </body>
 </html>
