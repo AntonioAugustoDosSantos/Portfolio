@@ -2,31 +2,60 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Login – Antonio Augusto</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antonio Augusto | Portfólio Digital</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<body class="login-body">
-  <div class="login-container">
-    <h2>Login</h2>
-    <form id="loginForm">
-      <input type="text" id="username" placeholder="Usuário" required>
-      <input type="password" id="password" placeholder="Senha" required>
-      <button type="submit">Entrar</button>
-    </form>
-    <p id="loginError" class="error-msg"></p>
-  </div>
+<body>
+  <header class="topo">
+    <div class="logo">antonio<span>augusto</span></div>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Portfólio</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="modo-dark" onclick="toggleDarkMode()">🌙</div>
+  </header>
 
-  <script>
-    document.getElementById("loginForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      const user = document.getElementById("username").value;
-      const pass = document.getElementById("password").value;
-      if (user === "admin" && pass === "1234") {
-        window.location.href = "dashboard.html";
-      } else {
-        document.getElementById("loginError").innerText = "Usuário ou senha inválidos.";
-      }
-    });
-  </script>
+  <main class="conteudo">
+    <section class="intro">
+      <h1>Design, Tecnologia e Atendimento</h1>
+      <p>Soluções modernas para empresas e clientes com foco em performance e experiência.</p>
+    </section>
+
+    <section class="grade-artigos">
+      <article class="card">
+        <img src="https://via.placeholder.com/300x160" alt="Imagem 1">
+        <h2>Jornada do Cliente</h2>
+        <p>Mapeamento da experiência do cliente com foco em retenção.</p>
+      </article>
+      <article class="card">
+        <img src="https://via.placeholder.com/300x160" alt="Imagem 2">
+        <h2>Onboarding & Educação</h2>
+        <p>Integração, tutoriais e automações para novos clientes.</p>
+      </article>
+      <article class="card">
+        <img src="https://via.placeholder.com/300x160" alt="Imagem 3">
+        <h2>Desenvolvimento Web</h2>
+        <p>Sites responsivos, seguros e com design profissional.</p>
+      </article>
+      <article class="card">
+        <img src="https://via.placeholder.com/300x160" alt="Imagem 4">
+        <h2>Suporte Técnico</h2>
+        <p>Instalação, manutenção e atendimento remoto para sistemas e redes.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Contato: <a href="mailto:contato.antonioaugustodossantos@outlook.com.br">contato.antonioaugustodossantos@outlook.com.br</a></p>
+    <p>WhatsApp: <a href="https://wa.me/5531999825681" target="_blank" rel="noopener noreferrer">(31) 99982-5681</a></p>
+    <p>&copy; 2025 Antonio Augusto. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
