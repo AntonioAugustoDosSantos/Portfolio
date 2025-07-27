@@ -1,103 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <!-- Metadados e configurações -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cardápio de Serviços - Antonio Augusto</title>
-
-  <!-- Link para o CSS externo -->
+  <title>Login – Antonio Augusto</title>
   <link rel="stylesheet" href="style.css">
-
-  <!-- Fonte personalizada (Google Fonts) -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="login-body">
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Usuário" required>
+      <input type="password" id="password" placeholder="Senha" required>
+      <button type="submit">Entrar</button>
+    </form>
+    <p id="loginError" class="error-msg"></p>
+  </div>
 
-  <!-- Cabeçalho do site -->
-  <header>
-    <div class="container">
-      <h1>Antonio Augusto</h1>
-      <p>Especialista em Tecnologia da Informação e Sucesso do Cliente</p>
-
-      <!-- Menu de navegação -->
-      <nav>
-        <ul>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Conteúdo principal -->
-  <main>
-
-    <!-- Seção de Serviços -->
-    <section id="servicos">
-      <div class="container">
-        <h2>Serviços Disponíveis</h2>
-
-        <!-- Grid com os serviços em formato de cards -->
-        <div class="cardapio">
-
-          <!-- Item 1 -->
-          <article class="item">
-            <h3>Jornada do Cliente</h3>
-            <p>Mapeamento estratégico da experiência do cliente com foco em retenção.</p>
-          </article>
-
-          <!-- Item 2 -->
-          <article class="item">
-            <h3>Onboarding e Educação</h3>
-            <p>Boas-vindas digitais, tutoriais automatizados e capacitações.</p>
-          </article>
-
-          <!-- Item 3 -->
-          <article class="item">
-            <h3>Desenvolvimento Web</h3>
-            <p>Criação de sites seguros, otimizados e responsivos.</p>
-          </article>
-
-          <!-- Item 4 -->
-          <article class="item">
-            <h3>Suporte Técnico</h3>
-            <p>Manutenção, instalação e suporte técnico para sistemas e redes.</p>
-          </article>
-
-          <!-- Item 5 -->
-          <article class="item">
-            <h3>Treinamento em Informática</h3>
-            <p>Capacitação prática e personalizada para usuários e empresas.</p>
-          </article>
-
-          <!-- Item 6 -->
-          <article class="item">
-            <h3>Análise de Dados</h3>
-            <p>Dashboards interativos e relatórios para decisões estratégicas.</p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Seção de Contato -->
-    <section id="contato">
-      <div class="container">
-        <h2>Contato</h2>
-        <p><strong>Email:</strong> <a href="mailto:contato.antonioaugustodossantos@outlook.com.br">contato.antonioaugustodossantos@outlook.com.br</a></p>
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5531999825681" target="_blank">(31) 99982-5681</a></p>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Rodapé -->
-  <footer>
-    <div class="container">
-      <p>© 2025 Antonio Augusto. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+      if (user === "admin" && pass === "1234") {
+        window.location.href = "dashboard.html";
+      } else {
+        document.getElementById("loginError").innerText = "Usuário ou senha inválidos.";
+      }
+    });
+  </script>
 </body>
 </html>
