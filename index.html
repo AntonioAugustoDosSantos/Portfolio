@@ -1,77 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Antonio Augusto – Portfólio Profissional</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Metadados e configurações -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio de Serviços - Antonio Augusto</title>
+
+  <!-- Link para o CSS externo -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonte personalizada (Google Fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Cabeçalho do site -->
   <header>
-    <div class="container nav-container">
-      <h1 class="logo">Antonio Augusto</h1>
+    <div class="container">
+      <h1>Antonio Augusto</h1>
+      <p>Especialista em Tecnologia da Informação e Sucesso do Cliente</p>
+
+      <!-- Menu de navegação -->
       <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#contato">Contato</a>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
+  <!-- Conteúdo principal -->
   <main>
-    <section id="sobre" class="hero">
-      <div class="container">
-        <h2>Especialista em Tecnologia da Informação e Customer Success</h2>
-        <p>Ofereço soluções digitais, atendimento de excelência e educação tecnológica para clientes e empresas modernas.</p>
-      </div>
-    </section>
 
-    <section id="servicos" class="services">
+    <!-- Seção de Serviços -->
+    <section id="servicos">
       <div class="container">
-        <h2 class="section-title">Serviços Disponíveis</h2>
-        <div class="card-grid">
-          <div class="card">
+        <h2>Serviços Disponíveis</h2>
+
+        <!-- Grid com os serviços em formato de cards -->
+        <div class="cardapio">
+
+          <!-- Item 1 -->
+          <article class="item">
             <h3>Jornada do Cliente</h3>
-            <p>Mapeamento estratégico com foco em retenção e fidelização.</p>
-          </div>
-          <div class="card">
+            <p>Mapeamento estratégico da experiência do cliente com foco em retenção.</p>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="item">
             <h3>Onboarding e Educação</h3>
-            <p>Boas-vindas digitais, tutoriais e fluxos automatizados.</p>
-          </div>
-          <div class="card">
+            <p>Boas-vindas digitais, tutoriais automatizados e capacitações.</p>
+          </article>
+
+          <!-- Item 3 -->
+          <article class="item">
             <h3>Desenvolvimento Web</h3>
-            <p>Criação de sites modernos, responsivos e seguros.</p>
-          </div>
-          <div class="card">
+            <p>Criação de sites seguros, otimizados e responsivos.</p>
+          </article>
+
+          <!-- Item 4 -->
+          <article class="item">
             <h3>Suporte Técnico</h3>
-            <p>Manutenção, instalação e suporte técnico remoto ou presencial.</p>
-          </div>
-          <div class="card">
+            <p>Manutenção, instalação e suporte técnico para sistemas e redes.</p>
+          </article>
+
+          <!-- Item 5 -->
+          <article class="item">
             <h3>Treinamento em Informática</h3>
-            <p>Capacitação personalizada para empresas e usuários.</p>
-          </div>
-          <div class="card">
+            <p>Capacitação prática e personalizada para usuários e empresas.</p>
+          </article>
+
+          <!-- Item 6 -->
+          <article class="item">
             <h3>Análise de Dados</h3>
-            <p>Dashboards e relatórios estratégicos para decisões assertivas.</p>
-          </div>
+            <p>Dashboards interativos e relatórios para decisões estratégicas.</p>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <section id="contato" class="contact">
+    <!-- Seção de Contato -->
+    <section id="contato">
       <div class="container">
-        <h2 class="section-title">Contato</h2>
+        <h2>Contato</h2>
         <p><strong>Email:</strong> <a href="mailto:contato.antonioaugustodossantos@outlook.com.br">contato.antonioaugustodossantos@outlook.com.br</a></p>
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5531999825681" target="_blank" rel="noopener noreferrer">(31) 99982-5681</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5531999825681" target="_blank">(31) 99982-5681</a></p>
       </div>
     </section>
+
   </main>
 
+  <!-- Rodapé -->
   <footer>
-    <p>© 2025 Antonio Augusto. Todos os direitos reservados.</p>
+    <div class="container">
+      <p>© 2025 Antonio Augusto. Todos os direitos reservados.</p>
+    </div>
   </footer>
+
 </body>
 </html>
