@@ -1,4 +1,4 @@
-// Navegação suave entre seções
+// Rolagem suave para âncoras
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', function (e) {
     e.preventDefault();
