@@ -1,3 +1,12 @@
-// Nenhuma função necessária no momento
-// JS pode ser usado futuramente para interações extras
-console.log('Site carregado com sucesso.');
+// Navegação suave entre seções
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const destino = document.querySelector(this.getAttribute('href'));
+    if (destino) {
+      destino.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
+});
