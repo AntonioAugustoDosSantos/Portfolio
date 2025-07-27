@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -9,66 +8,97 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #f7f9fc;
   color: #333;
+  scroll-behavior: smooth;
 }
 
 .container {
   max-width: 1200px;
   margin: auto;
+  padding: 3rem 2rem;
+}
+
+.header {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: white;
+  text-align: center;
   padding: 4rem 2rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-text {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
 }
 
 .section-title {
+  font-size: 2rem;
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  color: #111;
+  margin-bottom: 1rem;
+  color: #4e54c8;
 }
 
 .servicos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .card {
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   padding: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease-in-out;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+.icon {
+  font-size: 2rem;
+  color: #4e54c8;
+  margin-bottom: 1rem;
 }
 
 .card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-  color: #0077cc;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
 }
 
 .card p {
-  flex-grow: 1;
+  font-size: 0.95rem;
+}
+
+.contact {
+  background-color: #eef1ff;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 10px;
+}
+
+.contact p {
+  margin: 8px 0;
   font-size: 1rem;
-  margin-bottom: 1.5rem;
 }
 
-.btn {
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-.btn:hover {
-  background-color: #005fa3;
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
